@@ -1,16 +1,15 @@
 Rails.application.routes.draw do
-  get 'users/index'  
-
-  get 'users/show'
-
-  get 'users/new'
-
-  get 'users/create'
-
-  get 'users/edit'
-
-  get 'users/update'
-
-  get 'users/destroy'
-
+  get '/index' => 'users#index'
+  get '/show' => 'users#show'
+  get '/new' => 'users#new'
+  get '/create' => 'users#create'
+  get '/edit' => 'users#edit'
+  get '/update' => 'users#update'
+  get '/destroy' => 'users#destroy'
 end
+
+
+# HOW TO USE THIS... 
+# root 'users#index'
+# resources :users
+# resources :events
