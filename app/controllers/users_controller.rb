@@ -25,6 +25,11 @@ class UsersController < ApplicationController
   def update
   end
 
+  private
+  def user_params
+    params.require(:user).permit(:username, :email, :password, :password_confirmation) 
+  end 
+
   def destroy
     session[:user_id] = nil
     current_user.destroy
