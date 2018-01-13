@@ -12,11 +12,12 @@
   <body>
     <div id="navigation">
       <% if logged_in? %>
-        Signed In As: <%= current_user.name %>
-        <%= link_to("Logout", logout_path, method: "delete") %>
+        Signed in as: <%= current_user.username %>
+        <%= link_to('Logout', logout_path, method: 'delete') %>
       <% else %>
-	      <%= link_to("Log In", new_session_path) %>
+	      <%= link_to('Log In', new_session_path) %>
       <% end %>
+      
       <%= yield %>
     </div>
   </body>
