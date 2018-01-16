@@ -3,8 +3,8 @@
 #![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) presents
 COLLECTION: the app for the fashionista
 
-![Imgur](<a href="https://imgur.com/Q8xQ84I"><img src="https://i.imgur.com/Q8xQ84I.jpg" title="source: imgur.com" /></a>)
-> An app to upload fashion images, videos and comments.
+!<a href="https://imgur.com/Q8xQ84I"><img src="https://i.imgur.com/Q8xQ84I.jpg" title="source: imgur.com" /></a>
+>An app to upload fashion images, videos and info.
 
 Collection is a simple and functional app to post your favorite images and video from the fashion industry. Built in Ruby on Rails, it's based in the well-known MVC architecture (Model-View-Controller), using templates. 
 
