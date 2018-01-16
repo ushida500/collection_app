@@ -3,37 +3,68 @@
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Vidaloka" rel="stylesheet">
   <style type="text/css">
     body {
-      background-image: url("<a href="https://www.freepik.com/free-photo/pc-student-happy-shopping-people-outdoor_1212364.htm">Designed by Freepik</a>");
-      background-size: cover;
+    background-image: url("./images/2783.jpg");
+    background-size: cover;
     }
 
-    .container1 {
-        position: inline-block;
+  .container1 {
+      position: inline-block;
+    }
+
+  legend {
+      text: bold; 
     }
   </style>
 </head>
 
 <body>
-    <h1>Your Fashion Events!</h1>
-    <div class="container1">
+    <div class="container1"> 
         <%= form_for :event, url: events_path do |f| %>
-    <p>
-        <%= f.label :url %><br>
-        <%= f.text_field :designer %>
-    </p>
-
-    <p>
-        <%= f.submit "Add event", class: "btn btn-large btn-primary" %>
-    </p>
-    </div>
-
+		<div class="row"><legend class="col-md-4 col-md-offset-4">Your Fashion Events!</legend></div>
+    	<fieldset>
+	    	<div class="form-group">
+	        	<%= label_tag :url, 'URL', class: 'col-md-4 control-label' %>
+		    	<div class="col-md-5">
+		        	<%= text_field_tag :url, params[:email], class: 'form-control' %>
+		    	</div>
+	    	</div>
+	    	<div class="form-group">
+	        	<%= label_tag :designer, 'Designer', class: 'col-md-4 control-label' %>
+		    	<div class="col-md-5">
+		        	<%= text_field_tag :designer, nil, class: 'form-control' %>
+		    	</div>
+	    	</div>
+            <div class="form-group">
+	        	<%= label_tag :collection, 'Collection', class: 'col-md-4 control-label' %>
+		    	<div class="col-md-5">
+		        	<%= text_field_tag :collection, nil, class: 'form-control' %>
+		    	</div>
+	    	</div>
+            <div class="form-group">
+	        	<%= label_tag :year, 'Year', class: 'col-md-4 control-label' %>
+		    	<div class="col-md-5">
+		        	<%= number_field_tag :year, nil, class: 'form-control' %>
+		    	</div>
+	    	</div>
+             <div class="form-group">
+	        	<%= label_tag :comments, 'Comments', class: 'col-md-4 control-label' %>
+		    	<div class="col-md-5">
+		        	<%= text_field_tag :comments, nil, class: 'form-control' %>
+		    	</div>
+	    	</div>
+	    	<div class="form-group">
+	        	<div class="col-md-8 col-md-offset-4">
+	            	<%= f.submit "Add Event", class: "btn btn-large btn-danger" %>
+	        	</div>
+	    	</div>
+    	</fieldset>
 
     <div class="footer">
         <%= link_to("Go Back", users_path) %>
         <%= link_to("Edit", edit_user_path(@user)) %>
         <%= link_to("Delete", user_path(@user), method: "delete", data: {confirm: "Are you sure you want to delete this event?"}) %>
     </div>
-    <% end %>
+<% end %>
 </body>
 
 
