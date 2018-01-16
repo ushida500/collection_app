@@ -1,6 +1,6 @@
 # README
 
-#![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) presents
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) presents
 COLLECTION: the app for the fashionista
 
 !<a href="https://imgur.com/Q8xQ84I"><img src="https://i.imgur.com/Q8xQ84I.jpg" title="source: imgur.com" /></a>
