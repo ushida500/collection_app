@@ -1,7 +1,24 @@
 # README
 
-#![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Presents
-Collection: the app for the fashionista
+#![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) presents
+COLLECTION: the app for the fashionista
+
+Collection is a simple and functional app to post your favorite images and video from the fashion industry. Built in Ruby on Rails, it's based in the well-known MVC architecture (Model-View-Controller), using templates. 
+
+USERS STORIES: what inspires this app
+- "As a user, I will like to get an app to upload images and videos from the fashion events."
+- "As a user, I want an app that will let me submit comments about my images and videos from the fashion industry."
+- "As a user I want a page to enter my user details."
+- "As a user I want an app to manage my images and information about fashion." 
+
+DEVELOPMENT
+- Collection runs through 2 models, one for the user and another one for the events (images, videos, comments that the user will upload). 
+
+
+
+
+
+
 
 
 
