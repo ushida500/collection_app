@@ -1,2 +1,8 @@
-<h1>Events#show</h1>
-<p>Find me in app/views/events/show.html.erb</p>
+<h1>Your Fashion Events!</h1>
+
+<%= image_tag(@event.url) %>
+<h2>: <%= @event.designer %></h2>
+<h3>: <%= @event.collection %></h3>
+<h3>: <%= @event.year %></h3>
+<h3>: <%= @event.comments %></h3>
+
