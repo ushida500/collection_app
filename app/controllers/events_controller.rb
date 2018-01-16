@@ -14,6 +14,9 @@ class EventsController < ApplicationController
   end
 
   def create
+    @event = event.new(event_params)
+    @event.save
+      redirect_to root_path
   end
 
   def edit
@@ -23,5 +26,15 @@ class EventsController < ApplicationController
   end
 
   def destroy
+    @event = event.find(params[:id])
+    if @event.destroy
+      redirect_to root_path
+      flash[:alert] = "Event deleted"
+    end
+  end
+
+  private
+  def event_params
+    params.require(:event).permit(:username, :email)
   end
 end
