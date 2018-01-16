@@ -4,7 +4,7 @@
 COLLECTION: the app for the fashionista
 
 <a href="https://imgur.com/Q8xQ84I"><img src="https://i.imgur.com/Q8xQ84I.jpg" title="source: imgur.com" /></a>
->An app to upload fashion images, videos and info.
+>An app to upload fashion images, videos and info. Designed by senivpetro / Freepik
 
 Collection is a simple and functional app to post your favorite images and video from the fashion industry. Built in Ruby on Rails, it's based in the well-known MVC architecture (Model-View-Controller), using templates. 
 
